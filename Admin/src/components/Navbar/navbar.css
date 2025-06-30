@@ -1,0 +1,30 @@
+.menu_icon::after{
+    content: "";
+    width: 0%;
+    height: 1px;
+    background-color: goldenrod;
+    position: absolute;
+    bottom: -3px;
+    
+    transition: 0.3s ease;
+    transition-delay: 0.2s;
+}
+.menu_icon:hover::after{
+    width: 80%;
+}
+.menu_icon::before{
+    content: "";
+    width: 0%;
+    height: 1px;
+    background-color: goldenrod;
+    position: absolute;
+    bottom: 2px;
+    transition: 0.3s linear;
+}
+.menu_icon:hover::before{
+    width: 60%;
+}
+nav{
+    position: sticky;
+    top: 0;
+}
