@@ -1,0 +1,255 @@
+.contact-section {
+  position: relative;
+}
+.contact-section .bg-poster {
+  position: absolute;
+  height: 600px;
+  top: -94px;
+  left: 0px;
+  width: 100%;
+  z-index: 1;
+  background-image: url(/public/Image/AdobeStock_734623441_Preview.jpeg);
+  background-attachment: fixed;
+  background-size: cover;
+  opacity: 0.5;
+}
+.contact-section .container .row {
+  position: relative;
+}
+.contact-section .container .row .border {
+  height: 100%;
+  border-left: 1px solid #715b3e;
+  border-right: 1px solid #715b3e;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: -5;
+}
+.contact-section .container .row .border .sub-border {
+  width: 20%;
+  border-left: 1px solid #21221e;
+}
+.contact-section .container .row .content {
+  position: relative;
+  z-index: 5;
+}
+.contact-section .container .row .content .heading {
+  height: 500px;
+  width: 100%;
+  align-items: center;
+  justify-content: center;
+}
+.contact-section .container .row .content .heading h1 {
+  text-align: center;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #c9ab81;
+}
+.contact-section .container .row .content .main-box {
+  padding: 50px;
+}
+.contact-section .container .row .content .main-box .box {
+  width: 50%;
+  align-items: center;
+}
+.contact-section .container .row .content .main-box .box .map {
+  width: 100%;
+  overflow: hidden;
+}
+.contact-section .container .row .content .main-box .box .map iframe {
+  width: 100%;
+}
+.contact-section .container .row .content .main-box .box .form-box {
+  padding: 30px;
+}
+.contact-section .container .row .content .main-box .box .form-box form span {
+  font-family: "Miniver", sans-serif;
+  display: block;
+  text-align: center;
+  line-height: 35px;
+  font-weight: 300;
+  font-size: 25px;
+  padding-bottom: 5px;
+  border-color: rgb(255, 255, 255);
+  color: rgb(201, 171, 129);
+}
+.contact-section .container .row .content .main-box .box .form-box form h2 {
+  text-align: center;
+  font-size: 45px;
+  line-height: 1.31em;
+  letter-spacing: 0.23em;
+  font-weight: 700;
+  text-transform: uppercase;
+  color: #c9ab81;
+}
+.contact-section .container .row .content .main-box .box .form-box form .input-box {
+  width: 100%;
+  padding: 5px 15px;
+}
+.contact-section .container .row .content .main-box .box .form-box form .input-box label {
+  display: block;
+  padding-bottom: 5px;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 29px;
+  color: #fff;
+}
+.contact-section .container .row .content .main-box .box .form-box form .input-box input {
+  display: inline-block;
+  width: 100%;
+  font-size: 19px;
+  color: #fff;
+  padding: 14px;
+  background: transparent;
+  border: 1px solid #715b3e;
+}
+.contact-section .container .row .content .main-box .box .form-box form .textarea-box {
+  padding: 15px;
+  width: 100%;
+}
+.contact-section .container .row .content .main-box .box .form-box form .textarea-box label {
+  display: block;
+  padding-bottom: 5px;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 29px;
+  color: #fff;
+}
+.contact-section .container .row .content .main-box .box .form-box form .textarea-box textarea {
+  resize: vertical;
+  width: 100%;
+  font-size: 19px;
+  color: #fff;
+  padding: 14px;
+  background: transparent;
+  border: 1px solid #715b3e;
+}
+.contact-section .container .row .content .main-box .box .form-box form .btn {
+  width: 100%;
+  padding: 25px 0px;
+  align-items: center;
+  justify-content: center;
+}
+.contact-section .container .row .content .main-box .box .form-box form .btn button {
+  display: inline-block;
+  font-size: 17px;
+  line-height: 2em;
+  font-weight: 300;
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #c9ab81;
+  padding: 9px 35px;
+  position: relative;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+.contact-section .container .row .content .main-box .box .form-box form .btn button::after {
+  position: absolute;
+  z-index: -1;
+  left: 65px;
+  top: -56px;
+  content: "";
+  rotate: 154deg;
+  width: 0px;
+  transition: all 0.5s;
+  height: 150px;
+  background-color: rgb(255, 255, 255);
+}
+.contact-section .container .row .content .main-box .box .form-box form .btn button::before {
+  z-index: -1;
+  position: absolute;
+  height: 150px;
+  background-color: rgb(255, 255, 255);
+  top: -50px;
+  right: 65px;
+  transition: all 0.5s;
+  content: "";
+  rotate: 154deg;
+  width: 0px;
+}
+.contact-section .container .row .content .main-box .box .form-box form .btn button:hover {
+  color: black;
+}
+.contact-section .container .row .content .main-box .box .form-box form .btn button:hover::after {
+  width: 150px;
+}
+.contact-section .container .row .content .main-box .box .form-box form .btn button:hover::before {
+  width: 150px;
+}
+
+@media (max-width: 991px) {
+  .contact-section .container .row .content .main-box .box .form-box form span {
+    font-size: larger;
+  }
+  .contact-section .container .row .content .main-box .box .form-box form h2 {
+    font-size: 40px;
+    letter-spacing: 2px;
+    padding-bottom: 10px;
+  }
+  .contact-section .container .row .content .main-box .box .form-box form .input-box input {
+    padding: 8px;
+  }
+  .contact-section .container .row .content .main-box .box .form-box form .textarea-box {
+    padding: 5px 15px;
+  }
+  .contact-section .container .row .content .main-box .box .form-box form .textarea-box textarea {
+    padding: 0px;
+  }
+  .contact-section .container .row .content .main-box .box .form-box form .btn button {
+    padding: 4px 28px;
+  }
+}
+@media (max-width: 767px) {
+  .contact-section .container .row .content .main-box .box {
+    width: 100%;
+  }
+}
+@media (max-width: 575px) {
+  .contact-section .container .row .content .main-box .box .form-box form span {
+    font-size: larger;
+  }
+  .contact-section .container .row .content .main-box .box .form-box form h2 {
+    font-size: 33px;
+  }
+  .contact-section .container .row .content .main-box .box .form-box form .input-box label {
+    font-size: medium;
+  }
+  .contact-section .container .row .content .main-box .box .form-box form .input-box input {
+    padding: 5px;
+  }
+  .contact-section .container .row .content .main-box .box .form-box form .textarea-box {
+    padding: 5px 15px;
+  }
+  .contact-section .container .row .content .main-box .box .form-box form .textarea-box textarea {
+    padding: 5px;
+  }
+  .contact-section .container .row .content .main-box .box .form-box form .btn button {
+    padding: 4px 28px;
+    font-size: 15px;
+    letter-spacing: 2px;
+  }
+  .contact-section .container .row .content .main-box .box .form-box form .btn button::after {
+    left: 57px;
+  }
+  .contact-section .container .row .content .main-box .box .form-box form .btn button::before {
+    right: 55px;
+  }
+}
+@media (max-width: 475px) {
+  .contact-section .container .row .content .main-box .box .form-box {
+    padding-left: 0px;
+    padding-right: 0px;
+  }
+  .contact-section .container .row .content .main-box .box .form-box form span {
+    font-size: medium;
+  }
+  .contact-section .container .row .content .main-box .box .form-box form h2 {
+    font-size: 28px;
+  }
+  .contact-section .container .row .content .main-box .box .form-box form .textarea-box label {
+    font-size: medium;
+  }
+}/*# sourceMappingURL=contact.css.map */

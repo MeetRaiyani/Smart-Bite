@@ -1,0 +1,234 @@
+.login-section .container .row {
+  position: relative;
+}
+.login-section .container .row .border {
+  height: 100%;
+  border-left: 1px solid #715b3e;
+  border-right: 1px solid #715b3e;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: -1;
+}
+.login-section .container .row .border .sub-border {
+  width: 20%;
+  border-left: 1px solid #21221e;
+}
+.login-section .container .row .content {
+  padding: 100px 0px;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  position: relative;
+  z-index: 5;
+}
+.login-section .container .row .content .heading {
+  padding-bottom: 50px;
+  justify-content: space-between;
+  width: 80%;
+}
+.login-section .container .row .content .heading h3 {
+  font-size: 19px;
+  line-height: 1.52em;
+  letter-spacing: 0.23em;
+  color: #c9ab81;
+}
+.login-section .container .row .content .heading p i {
+  padding: 0px 20px;
+  color: #c9ab81;
+}
+.login-section .container .row .content .form-box {
+  transition: all 0.5s;
+  width: 50%;
+}
+.login-section .container .row .content .form-box:hover {
+  border: 1px solid #c9ab81;
+}
+.login-section .container .row .content .form-box form {
+  padding: 50px;
+}
+.login-section .container .row .content .form-box form h2 {
+  text-align: center;
+  padding-bottom: 10px;
+  font-size: 45px;
+  line-height: 1.31em;
+  letter-spacing: 0.23em;
+  font-weight: 300;
+  text-transform: uppercase;
+  color: #c9ab81;
+}
+.login-section .container .row .content .form-box form label {
+  display: block;
+  padding: 25px 0px 5px 0px;
+  font-size: 19px;
+  font-weight: 300;
+  line-height: 29px;
+  color: #fff;
+}
+.login-section .container .row .content .form-box form input {
+  display: block;
+  width: 100%;
+  font: size 19px;
+  color: #fff;
+  padding: 14px;
+  background: transparent;
+  border: 1px solid #715b3e;
+}
+.login-section .container .row .content .form-box form .checkbox {
+  padding-bottom: 25px;
+  padding-top: 10px;
+  align-items: center;
+}
+.login-section .container .row .content .form-box form .checkbox input {
+  width: -moz-max-content;
+  width: max-content;
+  text-transform: lowercase;
+}
+.login-section .container .row .content .form-box form .checkbox label {
+  padding-left: 10px;
+  padding-top: 0px;
+}
+.login-section .container .row .content .form-box form .btn {
+  padding: 25px 0px;
+  align-items: center;
+  justify-content: center;
+}
+.login-section .container .row .content .form-box form .btn button {
+  cursor: pointer;
+  display: inline-block;
+  font-size: 17px;
+  line-height: 2em;
+  font-weight: 300;
+  letter-spacing: 0.36em;
+  text-transform: uppercase;
+  color: #fff;
+  background-color: transparent;
+  border: 1px solid #c9ab81;
+  overflow: hidden;
+  padding: 9px 35px;
+  position: relative;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+.login-section .container .row .content .form-box form .btn button::after {
+  position: absolute;
+  z-index: -1;
+  left: 79px;
+  top: -56px;
+  content: "";
+  rotate: 154deg;
+  content: "";
+  width: 0px;
+  transition: all 0.5s;
+  height: 150px;
+  background-color: rgb(255, 255, 255);
+}
+.login-section .container .row .content .form-box form .btn button::before {
+  z-index: -1;
+  position: absolute;
+  height: 150px;
+  background-color: rgb(255, 255, 255);
+  top: -50px;
+  right: 82px;
+  transition: all 0.5s;
+  content: "";
+  rotate: 154deg;
+  width: 0px;
+}
+.login-section .container .row .content .form-box form .btn button:hover {
+  color: black;
+}
+.login-section .container .row .content .form-box form .btn button:hover::after {
+  width: 150px;
+}
+.login-section .container .row .content .form-box form .btn button:hover::before {
+  width: 150px;
+}
+.login-section .container .row .content .form-box form a {
+  padding-top: 15px;
+  display: inline-block;
+}
+
+@media (max-width: 991px) {
+  .login-section .container .row .content {
+    padding: 50px;
+  }
+  .login-section .container .row .content .heading {
+    padding-bottom: 0px;
+  }
+  .login-section .container .row .content .form-box form {
+    padding: 50px 0px;
+  }
+  .login-section .container .row .content .form-box form h2 {
+    font-size: 40px;
+  }
+  .login-section .container .row .content .form-box:hover {
+    border: 0px;
+  }
+}
+@media (max-width: 767px) {
+  .login-section .container .row .content .heading h3 {
+    font-size: 16px;
+  }
+  .login-section .container .row .content .form-box {
+    width: 100%;
+    padding: 0px 100px;
+  }
+  .login-section .container .row .content .form-box form h2 {
+    font-size: 30px;
+  }
+  .login-section .container .row .content .form-box form label {
+    font-size: 16px;
+    padding-top: 10px;
+  }
+  .login-section .container .row .content .form-box form input {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .login-section .container .row .content .form-box form .btn button {
+    letter-spacing: 2px;
+    padding: 5px 30px;
+  }
+  .login-section .container .row .content .form-box form .checkbox {
+    padding-bottom: 0px;
+  }
+  .login-section .container .row .content .form-box:hover {
+    border: 0px;
+  }
+}
+@media (max-width: 575px) {
+  .login-section .container .row .content .heading h3 {
+    font-size: 14px;
+  }
+  .login-section .container .row .content .form-box {
+    width: 100%;
+    padding: 0px 50px;
+  }
+  .login-section .container .row .content .form-box form h2 {
+    font-size: 25px;
+  }
+  .login-section .container .row .content .form-box form label {
+    font-size: 14px;
+    padding-top: 10px;
+  }
+  .login-section .container .row .content .form-box form input {
+    padding: 10px;
+    font-size: 14px;
+  }
+  .login-section .container .row .content .form-box form .btn button {
+    font-size: 16px;
+    padding: 5px 25px;
+  }
+}
+@media (max-width: 475px) {
+  .login-section .container .row .content {
+    padding: 30px 0px;
+  }
+  .login-section .container .row .content .heading h3 {
+    font-size: 14px;
+  }
+  .login-section .container .row .content .form-box form {
+    padding-top: 10px;
+  }
+}/*# sourceMappingURL=login.css.map */

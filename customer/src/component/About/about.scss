@@ -1,0 +1,350 @@
+.about-section {
+  position: relative;
+
+  .bg-poster {
+    position: absolute;
+    height: 600px;
+    top: -94px;
+    left: 0px;
+    width: 100%;
+    z-index: 1;
+    background-image: url(/public/Image/AdobeStock_627853212_Preview.jpeg);
+    background-attachment: fixed;
+    background-size: cover;
+    opacity: 0.6;
+  }
+
+  .container {
+    .row {
+      position: relative;
+
+      .border {
+        height: 100%;
+        border-left: 1px solid #715b3e;
+        border-right: 1px solid #715b3e;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        z-index: -5;
+
+        .sub-border {
+          width: 20%;
+          border-left: 1px solid #21221e;
+        }
+      }
+
+      .content {
+        position: relative;
+        z-index: 5;
+        .heading {
+          height:500px;
+          width: 100%;
+          align-items: center;
+          justify-content: center;
+
+          h1 {
+            text-align: center;
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #c9ab81;
+          }
+        }
+
+        .rastaurant-life {
+          padding-bottom: 50px;
+          .content {
+            .main-box {
+              padding: 50px;
+
+              .box {
+                width: 50%;
+                padding: 0px 15px;
+
+                &:nth-child(1) {
+                  position: relative;
+
+                  &::after {
+                    position: absolute;
+                    z-index: -1;
+                    content: '';
+                    top: 0px;
+                    left: 0px;
+                    height: 100%;
+                    border-bottom: 5px solid #c9ab81;
+                    border-left: 5px solid #c9ab81;
+                    width: 100%;
+                  }
+                }
+
+                .heading {
+                  padding: 50px 0px;
+                  height: max-content;
+                  flex-direction: column;
+                  align-items: center;
+                  justify-content: center;
+                  text-align: center;
+
+                  .title {
+                    justify-content: space-between;
+
+                    .Image {
+                      align-items: center;
+                    }
+                  }
+
+                  span {
+                    font-family: 'Miniver', sans-serif;
+                    display: block;
+                    text-align: center;
+                    line-height: 35px;
+                    font-weight: 300;
+                    font-size: 25px;
+                    padding-bottom: 5px;
+                    border-color: rgb(255, 255, 255);
+                    color: rgb(201, 171, 129);
+                  }
+
+                  h2 {
+                    width: 50%;
+                    font-size: 45px;
+                    line-height: 1.31em;
+                    letter-spacing: 0.23em;
+                    font-weight: 700;
+                    text-transform: uppercase;
+                    color: #c9ab81;
+                  }
+                }
+
+                ul {
+                  li {
+                    padding: 15px 0px;
+                    width: 100%;
+                    text-align: center;
+
+                    p {
+                      text-align: center;
+                    }
+
+                    a {
+                      font-family: "Open Sans Condensed", sans-serif;
+                      font-size: 14px;
+                      display: inline-block;
+                      line-height: 23px;
+                      text-transform: uppercase;
+                      letter-spacing: .36em;
+                      position: relative;
+                      transition: all 0.5s;
+
+                      &::after {
+                        position: absolute;
+                        content: '';
+                        width: 100%;
+                        bottom: -10px;
+                        border-top: 1px solid #c9ab81;
+                        border-bottom: 1px solid #c9ab81;
+                        left: 0px;
+                        height: 2px;
+                        transition: all 0.5s;
+                      }
+
+                      &::before {
+                        position: absolute;
+                        content: '';
+                        background-color: #0b1315;
+                        width: 20%;
+                        bottom: -10px;
+                        left: 0px;
+                        transition: all 0.5s;
+
+                        height: 4px;
+                        z-index: 2;
+                        transform: translateX(-100%);
+                      }
+
+                      &:hover {
+                        &::after {
+                          width: 100%;
+                        }
+
+                        &::before {
+                          transform: translateX(150px);
+                        }
+                      }
+                    }
+                  }
+                }
+
+                .image {
+                  width: 100%;
+                  padding: 100px;
+                  position: relative;
+
+                  &::after {
+                    position: absolute;
+                    content: '';
+                    top: 0px;
+                    left: 0px;
+                    height: 100%;
+                    border-top: 5px solid #c9ab81;
+                    border-right: 5px solid #c9ab81;
+                    width: 100%;
+                  }
+
+                  img {
+                    display: block;
+                    width: 100%;
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:1199px) {
+  .about-section {
+    .bg-poster {
+      height: 500px;
+      top: 0px;
+    }
+
+    .container {
+      .row {
+        .content {
+          .rastaurant-life {
+            .content {
+              .main-box {
+                .box {
+                  .heading {
+                    span {
+                      font-size: medium;
+                    }
+
+                    h2 {
+                      font-size: 38px;
+                    }
+                  }
+
+                  ul {
+                    li {
+                      &:nth-child(1) {
+                        display: none;
+                      }
+                    }
+                  }
+
+                  .image {
+                    height: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 15px;
+                  }
+                }
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:991px) {
+
+}
+
+@media (max-width:767px) {
+  .about-section {
+    .container {
+      .row {
+        .content {
+
+          .rastaurant-life {
+            .content {
+              .main-box {
+                .box {
+                  .heading {
+                    span {
+                      font-size: medium;
+                    }
+
+                    h2 {
+                      font-size: 33px;
+                    }
+                  }
+
+                  ul {
+                    li {
+                      a {
+                        letter-spacing: 2px;
+                        margin-bottom: 10px;
+                      }
+                    }
+                  }
+
+                  .image {
+                    height: 100%;
+                    justify-content: center;
+                    align-items: center;
+                    padding: 45px;
+                  }
+                }
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:575px) {
+  .about-section {
+    .container {
+      .row {
+        .content {
+          .rastaurant-life {
+            .content {
+              .main-box {
+                .box {
+                  padding: 0px;
+                  width: 100%;
+
+                  ul {
+                    padding: 0px 15px;
+                  }
+                }
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width:475px) {
+  .about-section {
+    .container {
+      .row {
+        .content {
+          .rastaurant-life {
+            .content {
+              .main-box {
+                padding: 15px;
+            
+              }
+
+            }
+          }
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,368 @@
+.addtocart-section {
+  .bg-shadow {
+    position: absolute;
+    top: 0px;
+    left: 50%;
+    background-color: #21221e;
+    height: 603px;
+    transform: translate(-50%);
+    width: 100%;
+    opacity: 0.5;
+    z-index: -5;
+  }
+
+  .container {
+    .row {
+      position: relative;
+
+      .border {
+        height: 100%;
+        border-left: 1px solid #715b3e;
+        border-right: 1px solid #715b3e;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        z-index: -6;
+
+        .sub-border {
+          width: 20%;
+          border-left: 1px solid #21221e;
+        }
+      }
+
+      .content {
+        position: relative;
+        z-index: 5;
+
+        .main-box {
+          width: 100%;
+          padding-top: 10px;
+
+
+          .box {
+            width: 100%;
+
+            .content {
+              width: 100%;
+
+              .image {
+                width: 50%;
+                padding: 50px;
+                justify-content: center;
+                align-items: center;
+
+                img {
+                  display: block;
+                  width: 50%;
+                }
+              }
+
+              .details {
+                width: 50%;
+
+                marquee {
+                  color: rgb(255, 255, 255);
+                  font-size: 28px;
+                  padding: 10px;
+                }
+
+                h2 {
+                  padding: 15px 0px;
+
+                }
+
+                p {
+                  padding: 15px 0px;
+                  line-height: 30px;
+                }
+
+                h5 {
+                  padding-top: 15px;
+
+                }
+
+                .btn {
+                  padding-top: 20px;
+
+                  ul {
+                    width: 100%;
+
+                    li {
+                      padding: 15px 0px;
+                      width: max-content;
+                      h5 {
+                        padding: 5px 10px;
+                      }                   
+
+                      button {
+                        display: inline-block;
+                        font-family: "Open Sans Condensed", sans-serif;
+                        font-size: 14px;                    
+                        width: 140px;
+                        padding: 10px;
+                        cursor: pointer;
+                        font-weight: 300;
+                        background: transparent;
+                        letter-spacing: .36em;
+                        text-transform: uppercase;
+                        border: 1px solid #c9ab81;
+                        color: white;
+                        position: relative;
+                        transition: all 0.5s;
+                        overflow: hidden;
+      
+      
+                        &::after{
+                          content: "";
+                          position: absolute;
+                          width: 1px;
+                          height: 50px;
+                          background-color: #c9ab81;
+                          rotate: 48deg;
+                          top: -11px;
+                          left: 13px;            
+                          transform: translateY(50px);
+                          transition: all 0.5s;
+                        }
+                        &::before{
+                          content: "";
+                          position: absolute;
+                          width: 1px;
+                          height: 50px;
+                          background-color: #c9ab81;
+                          rotate: 48deg;
+                          bottom: -11px;
+                          right: 13px;            
+                          transform: translateY(-50px);
+                          transition: all 0.5s;
+                        }
+                        &:hover{
+                          &::after{
+                            transform: translateY(0px);
+      
+                          }
+                          &::before{
+                            transform: translateY(0px);
+      
+                          }
+                        }
+      
+                     
+                      }
+                      &:nth-child(1){
+                        button{
+                          width: 60px;
+                        }
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+
+          .box {
+            width: 100%;
+            height: 100%;
+
+            video {
+              width: 100%;
+              height: 100%;
+              opacity: 0.6;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:1199px) {
+.addtocart-section{
+  .bg-shadow{
+    height: 630px;
+  }
+}
+}
+
+@media (max-width:991px) {
+  .addtocart-section {
+
+    .container {
+      .row {
+        .content {
+          .main-box {
+            .box {
+              .content {
+                padding: 10px;
+
+                .image {
+                  padding: 0px;
+                }
+
+                .details {
+                  marquee {
+                    font-size: 18px;
+                    padding: 0px;
+                  }
+
+                  h2 {
+                    font-size: 25px;
+                  }
+
+                  p {
+                    padding: 0px;
+                  }
+
+                  .btn {
+                    padding-top: 0px;
+
+                    ul {
+                      padding-top: 5px;
+
+                      li {
+                        padding: 5px;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:767px) {
+  .addtocart-section {
+    .bg-shadow{
+      height: 448px;
+    }
+    .container {
+      .row {
+        .content {
+          .main-box {
+            .box {
+              .content {
+                padding: 10px;
+
+                .image {
+                  padding: 0px;
+                }
+
+                .details {
+                  marquee {
+                    font-size: 16px;
+                    padding: 0px;
+                  }
+
+                  h2 {
+                    font-size: 22px;
+                    padding: 5px 0px;
+                  }
+
+                  p {
+                    line-height: 23px;
+
+                  }
+
+                  h5 {
+                    padding-top: 10px;
+                  }
+
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:575px) {
+  .addtocart-section {
+    .container {
+      .row {
+        .content {
+          .main-box {
+            padding: 0px;
+            .box {
+              .content {              
+                padding: 10px;
+                padding-bottom: 0px;
+                .image {
+                  width: 40%;
+                }
+                .details {
+                  width: 60%;
+                  marquee {
+                    font-size: 12px;
+                  }
+                  h2 {
+                    font-size: 18px;
+                  }
+                  .btn {
+                    ul {
+                      display: flex;
+                      li {
+                        width: 50%;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:475px) {
+  .addtocart-section {
+    .bg-shadow{
+      display: none;
+    }
+    .container {
+      .row {
+        .content {
+          .main-box {
+            padding: 0px;
+            .box {
+              .content {              
+                padding: 10px;
+                padding-bottom: 0px;
+                .image {
+                  width: 100%;
+                  padding-bottom: 50px;
+                }
+                .details {
+                  width: 100%;
+                  marquee {
+                    font-size: 12px;
+                  }
+                  h2 {
+                    font-size: 18px;
+                  }
+                  .btn {
+                    ul {
+                      display: flex;
+                      li {
+                        width: 50%;
+                      }
+                    }
+                  }
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}

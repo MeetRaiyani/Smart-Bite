@@ -1,0 +1,402 @@
+header {
+  border-bottom: 1px solid #715b3e;
+  z-index: 99;
+  transition: all 0.5s;
+  position: sticky;
+  top: 0px;
+  width: 100%;
+  background-color: transparent;
+}
+header.scrolled {
+  background-color: #0b1315;
+}
+header .container .row {
+  position: relative;
+}
+header .container .row .border {
+  height: 100%;
+  border-left: 1px solid #715b3e;
+  border-right: 1px solid #715b3e;
+  position: absolute;
+  left: 0px;
+  top: 0px;
+  width: 100%;
+  z-index: 1;
+}
+header .container .row .content {
+  position: relative;
+  padding: 0px 100px;
+  z-index: 5;
+  width: 100%;
+  justify-content: space-between;
+}
+header .container .row .content .logo {
+  justify-content: center;
+  align-items: center;
+}
+header .container .row .content .logo .image img {
+  display: block;
+  height: 80px;
+  width: 80px;
+}
+header .container .row .content .menu {
+  padding: 20px;
+}
+header .container .row .content .menu .btn {
+  display: none;
+}
+header .container .row .content .menu ul {
+  justify-content: center;
+  display: flex;
+}
+header .container .row .content .menu ul li {
+  padding: 15px;
+  position: relative;
+}
+header .container .row .content .menu ul li .drop-down {
+  position: absolute;
+  top: 73px;
+  left: 0px;
+  opacity: 0;
+  width: 300px;
+  height: -moz-max-content;
+  height: max-content;
+  transform: translateX(-280%);
+  transition: all 0.5s;
+  z-index: 50;
+}
+header .container .row .content .menu ul li .drop-down ul {
+  width: 100%;
+  background-color: #0b1315;
+  border-radius: 5px;
+  height: 100%;
+  flex-direction: column;
+}
+header .container .row .content .menu ul li .drop-down ul li {
+  border-radius: 5px;
+  width: 100%;
+  border-bottom: 1px solid #c9ab81;
+  position: relative;
+  justify-content: space-between;
+}
+header .container .row .content .menu ul li .drop-down ul li a {
+  letter-spacing: 2px;
+}
+header .container .row .content .menu ul li .drop-down ul li .subdrop-down {
+  position: absolute;
+  top: 0px;
+  right: -300px;
+  opacity: 0;
+  width: 300px;
+  height: -moz-max-content;
+  height: max-content;
+  transform: translateX(500%);
+  transition: all 0.5s;
+  z-index: 50;
+}
+header .container .row .content .menu ul li .drop-down ul li .subdrop-down ul {
+  height: 100%;
+  width: 100%;
+  background-color: #715b3e;
+  border-radius: 5px;
+}
+header .container .row .content .menu ul li .drop-down ul li .subdrop-down ul li {
+  border: 1px solid #0b1315;
+  border-radius: 5px;
+}
+header .container .row .content .menu ul li .drop-down ul li .subdrop-down ul li a {
+  color: black;
+}
+header .container .row .content .menu ul li .drop-down ul li .subdrop-down ul li a::after {
+  background-color: white;
+}
+header .container .row .content .menu ul li .drop-down ul li .subdrop-down ul li a::before {
+  background-color: white;
+}
+header .container .row .content .menu ul li .drop-down ul li:hover .subdrop-down {
+  transform: translateX(0%);
+  opacity: 1;
+}
+header .container .row .content .menu ul li a {
+  font-family: "Open Sans Condensed", sans-serif;
+  font-size: 14px;
+  line-height: 23px;
+  text-transform: uppercase;
+  letter-spacing: 0.36em;
+  position: relative;
+  transition: all 0.5s inherit;
+}
+header .container .row .content .menu ul li a::after {
+  transition-delay: 2s;
+  position: absolute;
+  content: "";
+  width: 0%;
+  bottom: -10px;
+  left: 0px;
+  height: 1px;
+  background-color: #c9ab81;
+  transition: all 0.5s;
+}
+header .container .row .content .menu ul li a::before {
+  transition: all 0.5s;
+  transition-delay: 0.2s;
+  position: absolute;
+  content: "";
+  width: 0%;
+  bottom: -6px;
+  left: 0px;
+  background-color: #c9ab81;
+  height: 1px;
+}
+header .container .row .content .menu ul li a:hover::after {
+  width: 100%;
+}
+header .container .row .content .menu ul li a:hover::before {
+  width: 100%;
+}
+header .container .row .content .menu ul li:hover .drop-down {
+  transform: translateX(0%);
+  opacity: 1;
+}
+header .container .row .content .login-done {
+  position: relative;
+  align-items: center;
+  width: 125px;
+  justify-content: space-between;
+  transition: all 0.5s;
+}
+header .container .row .content .login-done .user-btn i {
+  font-size: 30px;
+}
+header .container .row .content .login-done ul {
+  position: absolute;
+  bottom: -70px;
+  left: 0px;
+  width: 125px;
+  background-color: white;
+  border-radius: 5px;
+  visibility: hidden;
+  opacity: 0;
+  transition: all 0.5s;
+}
+header .container .row .content .login-done ul.active {
+  visibility: visible;
+  opacity: 1;
+  bottom: -90px;
+}
+header .container .row .content .login-done ul li {
+  padding: 10px;
+  border: 1px solid black;
+}
+header .container .row .content .login-done ul li a {
+  color: #0b1315;
+  text-align: center;
+  font-size: 18px;
+}
+header .container .row .content .login-done ul li a i {
+  padding-right: 10px;
+}
+header .container .row .content .login-done .cart-btn a {
+  display: inline-block;
+  border: 1px solid #c9ab81;
+  font-size: 20px;
+  padding: 5px 10px;
+  border-radius: 5px;
+}
+header .container .row .content .login-done .cart-btn a i {
+  padding-right: 10px;
+}
+header .container .row .content .buy {
+  justify-content: center;
+  align-items: center;
+  transition: all 0.5s;
+}
+header .container .row .content .buy button {
+  background-color: transparent;
+  color: white;
+  font-size: 20px;
+  padding: 10px;
+  width: 100px;
+  border: 1px solid #c9ab81;
+  color: white;
+  position: relative;
+  transition: all 0.5s;
+  overflow: hidden;
+}
+header .container .row .content .buy button::after {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 50px;
+  background-color: #c9ab81;
+  rotate: 48deg;
+  top: -11px;
+  left: 13px;
+  transform: translateY(50px);
+  transition: all 0.5s;
+}
+header .container .row .content .buy button::before {
+  content: "";
+  position: absolute;
+  width: 1px;
+  height: 50px;
+  background-color: #c9ab81;
+  rotate: 48deg;
+  bottom: -11px;
+  right: 13px;
+  transform: translateY(-50px);
+  transition: all 0.5s;
+}
+header .container .row .content .buy button:hover::after {
+  transform: translateY(0px);
+}
+header .container .row .content .buy button:hover::before {
+  transform: translateY(0px);
+}
+header .container .row .content .buy button i {
+  padding-right: 20px;
+}
+
+@media (max-width: 1199px) {
+  header .container .row .content {
+    padding: 0px;
+  }
+  header .container .row .content .btn {
+    display: none;
+  }
+}
+@media (max-width: 991px) {
+  header .container .row .content .logo {
+    width: 15%;
+  }
+  header .container .row .content .menu {
+    width: 70%;
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  header .container .row .content .menu .btn {
+    display: block;
+    height: 50px;
+    width: 50px;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+  }
+  header .container .row .content .menu .btn span {
+    display: block;
+    width: 100%;
+    height: 100%;
+    text-align: center;
+  }
+  header .container .row .content .menu .btn span i {
+    width: 100%;
+    height: 100%;
+    font-size: 30px;
+    padding: 10px;
+  }
+  header .container .row .content .menu .btn::after {
+    position: absolute;
+    width: 100%;
+    content: "";
+    height: 100%;
+    top: 0px;
+    left: 0px;
+    border-left: 2px solid #c9ab81;
+    border-right: 2px solid #c9ab81;
+    border-radius: 150px;
+    transition: all 0.5s;
+  }
+  header .container .row .content .menu .btn::before {
+    position: absolute;
+    width: 80%;
+    content: "";
+    height: 80%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    border-top: 2px solid #c9ab81;
+    border-bottom: 2px solid #c9ab81;
+    border-radius: 150px;
+    transition: all 0.5s;
+  }
+  header .container .row .content .menu .btn.active::after {
+    rotate: 360deg;
+  }
+  header .container .row .content .menu .btn.active::before {
+    border-left: 2px solid #c9ab81;
+    border-right: 2px solid #c9ab81;
+  }
+  header .container .row .content .menu ul {
+    position: absolute;
+    top: 91px;
+    opacity: 0;
+    left: 50%;
+    width: 500px;
+    background-color: #0b1315;
+    flex-direction: column;
+    height: -moz-max-content;
+    height: max-content;
+    transform: translate(-50%, -135%);
+    transition: all 0.5s;
+    border-radius: 5px;
+  }
+  header .container .row .content .menu ul li {
+    padding-left: 30px;
+    border-bottom: 1px solid #715b3e;
+    border-radius: 5px;
+  }
+  header .container .row .content .menu ul.active {
+    transform: translate(-50%, 0%);
+    opacity: 1;
+  }
+  header .container .row .content .buy {
+    width: 15%;
+  }
+  header .container .row .content .buy button {
+    width: 80px;
+    font-size: 18px;
+  }
+}
+@media (max-width: 767px) {
+  header .container .row .content .menu {
+    padding: 0px;
+  }
+  header .container .row .content .menu .btn {
+    height: 40px;
+    width: 40px;
+  }
+  header .container .row .content .menu .btn span i {
+    font-size: 20px;
+  }
+  header .container .row .content .menu ul {
+    top: 81px;
+    width: 350px;
+  }
+  header .container .row .content .menu ul li {
+    padding: 10px 30px;
+  }
+  header .container .row .content .menu ul li a {
+    letter-spacing: 2px;
+  }
+}
+@media (max-width: 575px) {
+  header .container .row .content .logo {
+    width: 25%;
+  }
+  header .container .row .content .menu {
+    width: 50%;
+  }
+  header .container .row .content .buy {
+    width: 25%;
+  }
+}
+@media (max-width: 475px) {
+  header .container .row .content {
+    padding: 0px 15px;
+  }
+  header .container .row .content .menu ul {
+    width: 250px;
+  }
+}/*# sourceMappingURL=header.css.map */

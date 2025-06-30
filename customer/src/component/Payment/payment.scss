@@ -1,0 +1,301 @@
+.payment-section {
+  .container {
+    .row {
+      position: relative;
+
+      .border {
+        height: 100%;
+        border-left: 1px solid #715b3e;
+        border-right: 1px solid #715b3e;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        z-index: -5;
+
+        .sub-border {
+          width: 20%;
+          border-left: 1px solid #21221e;
+        }
+      }
+
+      .content {
+        position: relative;
+        z-index: 5;
+        padding: 50px 15px;
+
+        .heading {
+          justify-content: center;
+          align-items: center;
+          width: 100%;
+
+          h1 {
+            font-weight: 700;
+            text-transform: uppercase;
+            color: #c9ab81;
+            padding: 15px;
+          }
+
+          .image {
+            img {
+              display: block;
+              width: 100%;
+            }
+          }
+
+        }
+
+        .form-box {
+          width: 50%;
+
+          form {
+            padding-top: 50px;
+
+            .input-box {
+              width: 100%;
+              padding: 5px 15px;
+
+              label {
+                padding-bottom: 5px;
+                display: inline-block;
+                font-size: 19px;
+                font-weight: 300;
+                line-height: 29px;
+                color: #fff;
+                width: 100%;
+
+              }
+
+              input {
+                width: 100%;
+                display: inline-block;
+                font-size: 19px;
+                color: #fff;
+                padding: 14px;
+                background: transparent;
+                border: 1px solid #715b3e;
+              }
+            }
+
+            .textarea-box {
+              padding: 5px 15px;
+              width: 100%;
+
+              label {
+                display: block;
+                padding-bottom: 5px;
+                font-size: 19px;
+                font-weight: 300;
+                line-height: 29px;
+                color: #fff;
+              }
+
+              textarea {
+                resize: vertical;
+                width: 100%;
+                font-size: 19px;
+                color: #fff;
+                padding: 14px;
+                background: transparent;
+                border: 1px solid #715b3e;
+              }
+
+            }
+
+            .radio-box {
+              width: 50%;
+              padding: 15px;
+
+              label {
+                padding-right: 20px;
+              }
+            }
+
+            .btn {
+              width: 100%;
+              padding: 25px 0px;
+              align-items: center;
+              justify-content: center;
+
+              button {
+
+                display: inline-block;
+                font-size: 17px;
+                line-height: 2em;
+                font-weight: 300;
+                letter-spacing: .36em;
+                text-transform: uppercase;
+                color: #fff;
+                background-color: transparent;
+                border: 1px solid #c9ab81;
+                padding: 9px 35px;
+                position: relative;
+                transition: all 0.5s;
+                overflow: hidden;
+
+                &::after {
+                  position: absolute;
+                  z-index: -1;
+                  left: 74px;
+                  top: -56px;
+                  content: "";
+                  rotate: 154deg;
+
+                  width: 0px;
+                  transition: all 0.5s;
+                  height: 150px;
+                  background-color: rgb(255, 255, 255);
+                }
+
+                &::before {
+                  z-index: -1;
+                  position: absolute;
+                  height: 150px;
+                  background-color: green;
+                  top: -50px;
+                  right: 74px;
+                  transition: all 0.5s;
+                  content: "";
+                  rotate: 154deg;
+                  width: 0px;
+                }
+
+                &:hover {
+                  color: black;
+
+                  &::after {
+                    width: 150px;
+                  }
+
+                  &::before {
+                    width: 150px;
+                  }
+                }
+              }
+            }
+
+          }
+        }
+
+        .scaner {
+          width: 50%;
+
+          .image {
+            width: 100%;
+            height: 100%;
+            align-items: center;
+            justify-content: center;
+
+            img {
+              width: 50%;
+              height: 50%;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:1199px) {}
+
+@media (max-width:991px) {}
+
+@media (max-width:767px) {
+  .payment-section {
+    .container {
+      .row {
+        .content {
+          padding: 25px;
+
+          .heading {
+            h1 {
+              line-height: 0px;
+              font-size: 30px;
+            }
+          }
+
+          .form-box {
+            form {
+              padding-top: 30px;
+
+              .input-box {
+                label {
+                  line-height: 20px;
+                  font-size: 16px;
+                }
+                input{
+                  font-size: 14px;
+                  padding: 10px;
+                }
+              }
+              .textarea-box {
+                label {
+                  line-height: 20px;
+                  font-size: 16px;
+                }
+                textarea{
+                  font-size: 14px;
+                  padding: 10px;
+                }
+              }
+              .radio-box{
+                width: max-content;
+                padding: 10px 15px;
+              }
+              .btn{
+                button{
+                  letter-spacing: 2px;
+                  padding: 5px 30px;
+                }
+              }
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:575px) {
+  .payment-section {
+    .container {
+      .row {
+        .content {
+          padding: 25px;
+          .form-box {
+            width: 100%;       
+          }
+          .scaner{
+            width: 100%;
+            height: 100%;
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:475px) {
+  .payment-section {
+    .container {
+      .row {
+        .content {
+          padding: 25px;
+
+          .heading {
+            // .image{
+            //   display: none;
+            // }
+            h1 {
+              line-height: 0px;
+              font-size: 25px;
+            }
+          }
+
+      
+        }
+      }
+    }
+  }
+}

@@ -1,0 +1,332 @@
+.login-section {
+  .container {
+    .row {
+      position: relative;
+
+      .border {
+        height: 100%;
+        border-left: 1px solid #715b3e;
+        border-right: 1px solid #715b3e;
+        position: absolute;
+        left: 0px;
+        top: 0px;
+        width: 100%;
+        z-index: -1;
+
+        .sub-border {
+          width: 20%;
+          border-left: 1px solid #21221e;
+        }
+      }
+
+      .content {
+        padding: 100px 0px;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+        position: relative;
+        z-index: 5;
+
+        .heading {
+          padding-bottom: 50px;
+          justify-content: space-between;
+          width: 80%;
+
+          h3 {
+            font-size: 19px;
+            line-height: 1.52em;
+            letter-spacing: .23em;
+            color: #c9ab81;
+          }
+
+
+          p {
+            i {
+              padding: 0px 20px;
+              color: #c9ab81;
+            }
+          }
+        }
+
+        .form-box {
+          transition: all 0.5s;
+
+          &:hover {
+            border: 1px solid #c9ab81;
+          }
+
+          width: 50%;
+
+          form {
+            padding: 50px;
+
+            h2 {
+              text-align: center;
+              padding-bottom: 10px;
+              font-size: 45px;
+              line-height: 1.31em;
+              letter-spacing: .23em;
+              font-weight: 300;
+              text-transform: uppercase;
+              color: #c9ab81;
+            }
+
+            label {
+              display: block;
+              padding: 25px 0px 5px 0px;
+              font-size: 19px;
+              font-weight: 300;
+              line-height: 29px;
+              color: #fff;
+            }
+
+            input {
+              display: block;
+              width: 100%;
+              font: size 19px;
+              color: #fff;
+              padding: 14px;
+              background: transparent;
+              border: 1px solid #715b3e;
+            }
+
+            .checkbox {
+              padding-bottom: 25px;
+              padding-top: 10px;
+              align-items: center;
+
+              input {
+                width: max-content;
+                text-transform: lowercase;
+              }
+
+              label {
+                padding-left: 10px;
+                padding-top: 0px;
+
+              }
+            }
+
+            .btn {
+              padding: 25px 0px;
+              align-items: center;
+              justify-content: center;
+
+              button {
+                cursor: pointer;
+                display: inline-block;
+                font-size: 17px;
+                line-height: 2em;
+                font-weight: 300;
+                letter-spacing: .36em;
+                text-transform: uppercase;
+                color: #fff;
+                background-color: transparent;
+                border: 1px solid #c9ab81;
+                overflow: hidden;
+                padding: 9px 35px;
+                position: relative;
+                transition: all 0.5s;
+                overflow: hidden;
+
+                &::after {
+                  position: absolute;
+                  z-index: -1;
+                  left: 79px;
+                  top: -56px;
+                  content: "";
+                  rotate: 154deg;
+                  content: '';
+                  width: 0px;
+                  transition: all 0.5s;
+                  height: 150px;
+                  background-color: rgb(255, 255, 255);
+                }
+
+                &::before {
+                  z-index: -1;
+                  position: absolute;
+                  height: 150px;
+                  background-color: rgb(255, 255, 255);
+                  top: -50px;
+                  right: 82px;
+                  transition: all 0.5s;
+                  content: "";
+                  rotate: 154deg;
+                  width: 0px;
+                }
+
+                &:hover {
+                  color: black;
+
+                  &::after {
+                    width: 150px;
+                  }
+
+                  &::before {
+                    width: 150px;
+                  }
+                }
+              }
+            }
+
+            a {
+              padding-top: 15px;
+              display: inline-block;
+              
+            }
+
+          }
+
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:1199px) {}
+
+@media (max-width:991px) {
+  .login-section {
+    .container {
+      .row {
+        .content {
+          padding: 50px;
+
+          .heading {
+            padding-bottom: 0px;
+          }
+
+          .form-box {
+
+            form {
+              padding: 50px 0px;
+
+              h2 {
+                font-size: 40px;
+              }
+            }
+
+            &:hover {
+              border: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:767px) {
+  .login-section {
+    .container {
+      .row {
+        .content {
+          .heading {
+            h3 {
+              font-size: 16px;
+            }
+          }
+
+          .form-box {
+            width: 100%;
+            padding: 0px 100px;
+
+            form {
+              h2 {
+                font-size: 30px;
+              }                
+                label {
+                  font-size: 16px;
+                  padding-top:10px ;
+                }
+                input {
+                  padding: 10px;
+                  font-size: 14px;               
+              }
+              .btn{
+                button{
+                  letter-spacing: 2px;
+                  padding: 5px 30px;
+                }
+              }
+              .checkbox{              
+                padding-bottom: 0px;
+              }
+            }
+
+            &:hover {
+              border: 0px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:575px) {
+  .login-section {
+    .container {
+      .row {
+        .content {
+          .heading {
+            h3 {
+              font-size: 14px;
+            }
+          }
+
+          .form-box {
+            width: 100%;
+            padding: 0px 50px;
+
+            form {
+              h2 {
+                font-size: 25px;
+              }                
+                label {
+                  font-size: 14px;
+                  padding-top:10px ;
+                }
+                input {
+                  padding: 10px;
+                  font-size: 14px;               
+              }
+              .btn{
+                button{
+                 font-size: 16px;
+                 padding: 5px 25px;
+                }
+              }
+           
+            }
+          
+          }
+        }
+      }
+    }
+  }
+}
+
+@media (max-width:475px) {
+  .login-section {
+    .container {
+      .row {
+        .content {
+          padding: 30px 0px;
+          .heading {
+            h3 {
+              font-size: 14px;
+            }
+          }
+          .form-box {
+            form {
+              padding-top: 10px;
+            }          
+          }
+        }
+      }
+    }
+  }
+  
+}

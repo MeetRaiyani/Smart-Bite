@@ -1,0 +1,31 @@
+.my-orders .container{
+    border-left: 1px solid #715b3e; 
+    border-right: 1px solid #715b3e;
+    position: relative;
+    top: -20px; 
+    padding: 0 60px;
+    
+}
+.my-orders .container h2{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding-top: 40px;
+    padding-bottom: 40px;
+    font-weight: 600;
+}
+.my-orders .container .my-orders-order{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: 1px solid #715b3e;
+    margin-top: 10px;
+    padding: 8px 20px;
+}
+.my-orders .container .my-orders-order .order-list{
+    width: 300px;
+}
+
+
